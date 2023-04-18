@@ -42,7 +42,7 @@ estas son las etapas en las que se desarrollo el proyecto:
 4. Desarollo de una API con FastAPI Link: (https://github.com/CrissZamu/MLops_Cosnultas_streaming_platforms/blob/main/main.py)
 5. Deploy de la API en Render para las funciones de consulta y la funcion de recoemndacion Link: (https://api-consulta-streaming-platforms.onrender.com/docs)
 
-![arquitectura](https://github.com/RocioAldanaMendez/FastAPI/blob/main/aseets/structure.png)
+![arquitectura](https://github.com/CrissZamu/MLops_Cosnultas_streaming_platforms/blob/main/structure.png)
 
 ## ESTADO:
 <h4 align="center">
