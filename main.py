@@ -113,3 +113,16 @@ def prod_per_county(tipo:str,pais:str,anio:int):
     disponibles en todas las cuatro plataformas de streaming
 """
 
+@app.get("/get_predictions")
+def get_prediction (user_id:int):
+    
+    with open('../users_predictions.pkl', 'rb') as archivo:
+    modelo = pickle.load(archivo)
+
+    df_streaming = pd.read_csv ('CSV ETL/df_streaming.csv',delimiter=',')
+    df_streaming_ratings = pd.read_parquet ('CSV ETL/df_streaming_ratings.parquet')
+    user0=users_predictions.argsort()[user_id]
+    for i, aRepo in enumerate(user0[-5:]):
+        selRepo = df_streaming[df_streaming['id']==(aRepo+1)]
+        registro = df_streaming_ratings.iloc[aRepo,1] 
+        print(str(registro)) , 
