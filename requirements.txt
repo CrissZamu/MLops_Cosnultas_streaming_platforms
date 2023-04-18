@@ -5,8 +5,3 @@ uvicorn
 deta
 Jinja2
 flask
-scikit-learn
-pyarrow
-pickle
-seaborn
-matplotlib.pyplot
