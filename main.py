@@ -1,5 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Form
 import pandas as pd
+import numpy as np
+from fastapi.responses import JSONResponse
+from fastapi.exceptions import HTTPException
+from typing import Optional
+import pickle
 
 app = FastAPI()
 
@@ -113,16 +118,14 @@ def prod_per_county(tipo:str,pais:str,anio:int):
     disponibles en todas las cuatro plataformas de streaming
 """
 
-@app.get("/get_predictions")
-def get_prediction (user_id:int):
-    
-    with open('../users_predictions.pkl', 'rb') as archivo:
-    modelo = pickle.load(archivo)
+def cargar_modelo():
+    with open('C:/Users/Crist/OneDrive/Escritorio/MLops PI/users_predictions.pkl', 'rb') as archivo_modelo:
+            model = pickle.load('users_prediction.pkl')
+    return model
 
-    df_streaming = pd.read_csv ('CSV ETL/df_streaming.csv',delimiter=',')
-    df_streaming_ratings = pd.read_parquet ('CSV ETL/df_streaming_ratings.parquet')
-    user0=users_predictions.argsort()[user_id]
-    for i, aRepo in enumerate(user0[-5:]):
-        selRepo = df_streaming[df_streaming['id']==(aRepo+1)]
-        registro = df_streaming_ratings.iloc[aRepo,1] 
-        print(str(registro)) , 
+@app.get("/get_predictions")
+def get_prediction (userId:int):
+    with open('users_predictions.pkl', 'rb') as archivo:
+        model = pickle.load(archivo)
+    users_predictions = model.predict (userId)
+    return users_predictions  
