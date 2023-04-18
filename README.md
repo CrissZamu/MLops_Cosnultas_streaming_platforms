@@ -84,7 +84,7 @@ Link deploy: https://api-consulta-streaming-platforms.onrender.com/docs
 
 ## VIDEO
 En el sigueinte video podras encontrar una explicación y demostración mas detallada del proceso de este proyecto 
-<img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg"/> 
+<img src=
 https://www.youtube.com/watch?v=xjuB7wzt12k
 
 Gracias por ver este desarrollo, podes seguir los futuros cambios dandole una estrellita en la parte superior derecha del repositorio. Podes Clonarlo, y/o podes hacer un PullRequest ya que todo aporte es bienvenido. 
