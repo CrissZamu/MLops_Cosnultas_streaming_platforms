@@ -41,6 +41,7 @@ estas son las etapas en las que se desarrollo el proyecto:
 3. Desarrollo de Modelo con Machine Learning (ML) parte 2 Link: (https://github.com/CrissZamu/MLops_Cosnultas_streaming_platforms/blob/main/EDA/EDA%20for%20ML.ipynb)
 4. Desarollo de una API con FastAPI Link: (https://github.com/CrissZamu/MLops_Cosnultas_streaming_platforms/blob/main/main.py)
 5. Deploy de la API en Render para las funciones de consulta y la funcion de recoemndacion Link: (https://api-consulta-streaming-platforms.onrender.com/docs)
+6. Video Link: (https://youtu.be/5V-PLs3UDc8)
 
 ![arquitectura](https://github.com/CrissZamu/MLops_Cosnultas_streaming_platforms/blob/main/structure.png)
 
@@ -84,7 +85,7 @@ Link deploy: https://api-consulta-streaming-platforms.onrender.com/docs
 
 ## VIDEO
 En el sigueinte video podras encontrar una explicación y demostración mas detallada del proceso de este proyecto 
-
+https://youtu.be/5V-PLs3UDc8
 
 Gracias por ver este desarrollo, podes seguir los futuros cambios dandole una estrellita en la parte superior derecha del repositorio. Podes Clonarlo, y/o podes hacer un PullRequest ya que todo aporte es bienvenido. 
 
